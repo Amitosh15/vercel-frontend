@@ -1,0 +1,117 @@
+.skills-container {
+    max-width: 650px;
+    margin: 0 auto 0 auto;
+    border-radius: 18px;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.skills-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    border: 2px solid #fff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
+        0 0 14px 2px rgba(255, 255, 255, 0.5);
+    /* white glow */
+    padding: 2.5rem 2rem;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.skills-container h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skills-container h2::after {
+    content: "";
+    display: block;
+    margin: 0.7rem auto 0 auto;
+    width: 60px;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #00bfff 0%, #ff00cc 100%);
+}
+
+.skills-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(34, 34, 34, 0.85);
+    border-radius: 2rem;
+    box-shadow: 0 2px 12px rgba(0, 191, 255, 0.10);
+    padding: 1.2rem 1.8rem;
+    min-width: 110px;
+    min-height: 110px;
+    font-size: 2.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid rgba(0, 191, 255, 0.10);
+}
+
+.skill-icon span {
+    margin-top: 0.7rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.skill-icon:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 24px #00bfff55;
+    border-color: #00bfff;
+    background: rgba(0, 191, 255, 0.08);
+}
+
+@media screen and (max-width: 900px) {
+    .skills-container {
+        padding: 2.5rem 5rem;
+    }
+
+    .skills-card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 2rem;
+        gap: 1.2rem;
+    }
+
+    .skill-icon {
+        min-width: 90px;
+        min-height: 90px;
+        font-size: 1.7rem;
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills-container {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .skills-card {
+        max-width: 80vw;
+        margin: 20px auto 5px auto;
+        padding: 1.2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .skill-icon {
+        min-width: 80px;
+        min-height: 80px;
+        font-size: 1.3rem;
+        padding: 0.8rem 0.8rem;
+    }
+
+    .skills-container h2 {
+        font-size: 1.3rem;
+    }
+}

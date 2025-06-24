@@ -1,0 +1,137 @@
+/* ...existing code... */
+
+.about-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #00bfff;
+    max-width: 90vw;
+    max-height: 90vw;
+    box-shadow: 0 2px 24px rgba(0, 191, 255, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.about-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.25), 0 0 16px 2px #00bfff80;
+    border-color: #00bfff;
+}
+
+.about-container {
+    margin-top: 19vh;
+    padding: 2rem 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-text span {
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.main-text {
+    width: 30%;
+    min-width: 250px;
+}
+
+.type-animation {
+    color: #00bfff;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.main-text button {
+    margin-top: 1.5rem;
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.main-text button:hover {
+    background-color: #009acd;
+}
+
+@media screen and (max-width: 900px) {
+    .about-content {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .main-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-image {
+        width: 250px;
+        height: 250px;
+        max-width: 70vw;
+        max-height: 70vw;
+    }
+
+    .main-text span {
+        font-size: 2rem;
+    }
+
+    .type-animation {
+        font-size: 1.2em !important;
+    }
+
+    .button button {
+        max-width: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        margin-top: 12vh;
+        padding: 1rem 0;
+    }
+
+    .main-text {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .main-text span {
+        font-size: 1.3rem;
+    }
+
+    p {
+        margin: 20px 20px;
+    }
+
+    .type-animation {
+        font-size: 1em !important;
+    }
+
+    .about-image {
+        width: 200px;
+        height: 200px;
+        max-width: 90vw;
+        max-height: 90vw;
+    }
+
+    .main-text button {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
