@@ -1,5 +1,5 @@
 import "./Projects.css";
-import wp from "../../assets/wp-site.png";
+import wp from "../../assets/wp.png";
 import eCommerce from "../../assets/e-commerce.png";
 
 const projectData = [
