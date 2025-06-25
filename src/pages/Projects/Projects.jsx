@@ -1,10 +1,10 @@
 import "./Projects.css";
-import wp from "../../assets/wp-site.png";
-import eCommerce from "../../assets/e-commerce.png";
+import site from "../../assets/site.jpg";
+import Ecommerce from "../../assets/Ecommerce.jpg";
 
 const projectData = [
   {
-    image: eCommerce,
+    image: Ecommerce,
     title: "E-commerce App",
     description:
       "A full-stack MERN e-commerce application with user authentication and payment integration.",
@@ -20,7 +20,7 @@ const projectData = [
     ],
   },
   {
-    image: wp,
+    image: site,
     title: "Clothing Website",
     description:
       "Developed and launched a WordPress e-commerce website for clothing sales, managing all aspects from design to product listing.",
