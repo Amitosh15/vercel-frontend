@@ -10,16 +10,16 @@ const Contact = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = (e) => {
+    // e.preventDefault();
     setStatus("Sending...");
-    try {
-      await axios.post("http://localhost:8800", form); // Change URL to your backend endpoint
-      setStatus("Message sent!");
-      setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      setStatus("Failed to send message.");
-    }
+    // try {
+    //   await axios.post("http://localhost:8800", form); // Change URL to your backend endpoint
+    //   setStatus("Message sent!");
+    //   setForm({ name: "", email: "", message: "" });
+    // } catch (error) {
+    //   setStatus("Failed to send message.");
+    // }
   };
 
   return (
@@ -29,7 +29,12 @@ const Contact = () => {
         I'd love to hear from you! Fill out the form below and I'll get back to
         you soon.
       </p>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form
+        action="https://formspree.io/f/mqaboavp"
+        method="POST"
+        className="contact-form"
+        onSubmit={handleSubmit}
+      >
         <div className="form-group">
           <input
             type="text"
