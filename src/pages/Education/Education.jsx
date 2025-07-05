@@ -28,7 +28,7 @@ const educationData = [
     subtitle: "Udemy",
     year: "2024",
     description:
-      "Completed a certification in full-stack web development from Udemy, covering modern technologies such as React, Node.js, Express, and MongoDB.",
+      "Completed a certification in full-stack web development, covering modern technologies such as React, Node.js, Express, and MongoDB.",
     certificateUrl:
       "https://drive.google.com/file/d/13G1pzY5C3CPy5lT41CI5SrFeUhVRJfvT/view?usp=drive_link",
   },
