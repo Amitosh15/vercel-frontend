@@ -14,7 +14,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="linkedin.com/in/amitosh-kashyap-91662b203"
+          href="https://linkedin.com/in/amitosh-kashyap-91662b203"
           target="_blank"
           rel="noopener noreferrer"
         >
