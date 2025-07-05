@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,25 +7,18 @@ const Footer = () => {
       <h2>Amitosh</h2>
       <div className="footer-icons">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Amitosh15"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="linkedin.com/in/amitosh-kashyap-91662b203"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin />
-        </a>
-        <a
-          href="https://twitter.com/yourusername"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter />
         </a>
       </div>
       &copy; 2025 MyPortfolio. All rights reserved.
