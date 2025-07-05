@@ -98,7 +98,7 @@
     filter: brightness(1.1);
 }
 
-.project-link {
+/* .project-link {
     margin-top: auto;
     background: linear-gradient(90deg, #00bfff 0%, #ff00cc 100%);
     color: #fff;
@@ -109,7 +109,7 @@
     font-size: 1rem;
     transition: background 0.2s;
     display: inline-block;
-}
+} */
 
 .project-link:hover {
     background: linear-gradient(90deg, #ff00cc 0%, #00bfff 100%);

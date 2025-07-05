@@ -1,5 +1,4 @@
 import { useState } from "react";
-import axios from "axios";
 import "./Contact.css";
 
 const Contact = () => {
@@ -11,15 +10,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
     setStatus("Sending...");
-    // try {
-    //   await axios.post("http://localhost:8800", form); // Change URL to your backend endpoint
-    //   setStatus("Message sent!");
-    //   setForm({ name: "", email: "", message: "" });
-    // } catch (error) {
-    //   setStatus("Failed to send message.");
-    // }
   };
 
   return (
