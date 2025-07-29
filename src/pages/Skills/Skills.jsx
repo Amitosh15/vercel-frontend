@@ -33,8 +33,9 @@ const Skills = () => {
         <div className="heading">
           <h2>SKILLS</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita,
-            necessitatibus.
+            Here are some of the technologies and tools I have experience with,
+            ranging from front-end development to back-end, databases, version
+            control.
           </p>
           <div className="skills-card">
             {skillsList.map((skill, idx) => (
