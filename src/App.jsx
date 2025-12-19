@@ -5,16 +5,13 @@ import Education from "./pages/Education/Education";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <About />
-      <Education />
-      <Skills />
-      <Projects />
-      <Contact />
+      <Outlet />
       <Footer />
     </>
   );

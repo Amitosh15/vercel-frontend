@@ -21,11 +21,27 @@
 
 .navbar-links {
     display: flex;
-    gap: .5rem;
+    gap: 22px;
     list-style: none;
     margin: 0;
     padding: 0;
     transition: all 0.3s;
+    font-size: large;
+}
+
+/* remove underline for navbar links */
+.navbar-links a,
+.navbar-links a:link,
+.navbar-links a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    text-decoration: none;
+    color: #38bdf8;
+    outline: none;
 }
 
 .nav-btn {
@@ -60,15 +76,6 @@ html {
     border: none;
     cursor: pointer;
     z-index: 1100;
-}
-
-.bar {
-    width: 100%;
-    height: 4px;
-    background: #fff;
-    margin: 4px 0;
-    border-radius: 2px;
-    transition: 0.3s;
 }
 
 /* Mobile */

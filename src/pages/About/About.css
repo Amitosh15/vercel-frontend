@@ -36,6 +36,7 @@
     font-weight: 700;
 }
 
+
 .main-text {
     width: 30%;
     min-width: 250px;
@@ -64,6 +65,40 @@ p {
 
 .main-text button:hover {
     background-color: #009acd;
+}
+
+/* Animation */
+.about-image {
+    animation: rightSlide 1.5s ease-out;
+}
+
+@keyframes rightSlide {
+    from {
+        transform: translateX(150px);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-text {
+    animation: leftSlide 1.5s ease-out;
+
+}
+
+@keyframes leftSlide {
+    from {
+        transform: translateX(-150px);
+        opacity: 0.2;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 900px) {

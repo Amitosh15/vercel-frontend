@@ -1,19 +1,10 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-  const handleMenuItemClick = (sectionId) => {
-    setActiveSection(sectionId);
-    setIsOpen(false);
-
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const menuItem = [
     { id: "about", label: "About" },
@@ -39,7 +30,7 @@ const Navbar = () => {
       </button>
 
       {/* Navbar menu */}
-      <ul className={`navbar-links${isOpen ? " open" : ""}`}>
+      {/* <ul className={`navbar-links${isOpen ? " open" : ""}`}>
         {menuItem.map((item) => (
           <li
             key={item.id}
@@ -55,6 +46,23 @@ const Navbar = () => {
             </button>
           </li>
         ))}
+      </ul> */}
+      <ul className={`navbar-links${isOpen ? " open" : ""}`}>
+        <Link to={"/about"}>
+          <li>About</li>
+        </Link>
+        <Link to={"/education"}>
+          <li>Education</li>
+        </Link>
+        <Link to={"/skills"}>
+          <li>Skills</li>
+        </Link>
+        <Link to={"/projects"}>
+          <li>Projects</li>
+        </Link>
+        <Link to={"/contact"}>
+          <li>Contact</li>
+        </Link>
       </ul>
     </nav>
   );
