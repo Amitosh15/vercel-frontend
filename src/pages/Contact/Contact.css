@@ -1,8 +1,6 @@
 .contact-container {
     max-width: 450px;
     margin: 0 auto 0 auto;
-    border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.32);
     padding: 1rem 2rem;
     text-align: center;
 }
@@ -21,6 +19,13 @@
     background: #0D081F;
     border-radius: 18px;
     padding: 2.5rem 2rem;
+    /* border: 2px solid #fff; */
+    border: 2px solid rgba(0, 191, 255, 0.15);
+}
+
+.contact-form:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.25), 0 0 16px 2px #00bfff80;
+    border-color: #00bfff;
 }
 
 .contact-container {
@@ -57,7 +62,8 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border: 1.5px solid #00bfff;
+    box-shadow: 0 8px 32px 0 rgba(0, 191, 255, 0.25), 0 0 10px 2px #00bfff80;
+    border-color: #00bfff;
     outline: none;
     background: #222;
 }
