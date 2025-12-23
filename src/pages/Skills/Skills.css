@@ -12,7 +12,6 @@
     border: 2px solid #fff;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
         0 0 14px 2px rgba(255, 255, 255, 0.5);
-    /* white glow */
     padding: 2.5rem 2rem;
     text-align: center;
     backdrop-filter: blur(8px);
@@ -95,6 +94,7 @@
 @media screen and (max-width: 600px) {
     .skills-container {
         padding: 1.5rem 0.5rem;
+        margin-top: 3rem;
     }
 
     .skills-card {
@@ -109,9 +109,5 @@
         min-height: 80px;
         font-size: 1.3rem;
         padding: 0.8rem 0.8rem;
-    }
-
-    .skills-container h2 {
-        font-size: 1.3rem;
     }
 }

@@ -10,6 +10,7 @@ import {
   FaFigma,
 } from "react-icons/fa";
 import { SiMongodb, SiRedux, SiExpress, SiPostman } from "react-icons/si";
+import { motion } from "motion/react";
 
 const skillsList = [
   { icon: <FaHtml5 color="#e44d26" />, name: "HTML5" },
@@ -39,10 +40,19 @@ const Skills = () => {
           </p>
           <div className="skills-card">
             {skillsList.map((skill, idx) => (
-              <div className="skill-icon" key={idx}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.4,
+                  scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                }}
+                className="skill-icon"
+                key={idx}
+              >
                 {skill.icon}
                 <span>{skill.name}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
