@@ -7,12 +7,18 @@ const educationData = [
     year: "2020 - 2024",
     description:
       "Graduated with honors, focusing on web development, networking, and databse",
+    certificateUrl:
+      "https://drive.google.com/file/d/1R_8yUVAtCC-cLvrvwACHE7_6IhxipiAq/view?usp=drive_link",
+    animation: "card1",
   },
   {
     title: "Higher Secondary",
     subtitle: "M.J. Childrens Senior Secondary School",
     year: "2019 - 2020",
     description: "Completed 12th grade with a focus on arts subject.",
+    certificateUrl:
+      "https://drive.google.com/file/d/1_7h6DBRt79pUGf1SwkbGycpbPsVvezVb/view?usp=drive_link",
+    animation: "card2",
   },
   {
     title: "Website Design & Development",
@@ -22,6 +28,7 @@ const educationData = [
       "Learned the fundamentals of web development including HTML, CSS, JavaScript, PHP, and Bootstrap.",
     certificateUrl:
       "https://drive.google.com/file/d/1FzTXfeXoK5JBD1N_MHmxcaXFcxPldo9u/view?usp=drive_link",
+    animation: "card3",
   },
   {
     title: "Full-Stack Web Development Certification",
@@ -31,6 +38,7 @@ const educationData = [
       "Completed a certification in full-stack web development, covering modern technologies such as React, Node.js, Express, and MongoDB.",
     certificateUrl:
       "https://drive.google.com/file/d/13G1pzY5C3CPy5lT41CI5SrFeUhVRJfvT/view?usp=drive_link",
+    animation: "card4",
   },
 ];
 
@@ -40,7 +48,7 @@ const Education = () => {
       <h2>EDUCATION</h2>
       <div className="education-cards">
         {educationData.map((item, idx) => (
-          <div className="education-card" key={idx}>
+          <div className={`education-card card ${item.animation}`} key={idx}>
             <h3>{item.title}</h3>
             <h4>{item.subtitle}</h4>
             <span className="education-year">{item.year}</span>
@@ -51,7 +59,7 @@ const Education = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="certificate-btn">View Certificate</button>
+                <button className="certificate-btn">View</button>
               </a>
             )}
           </div>

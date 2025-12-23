@@ -37,12 +37,12 @@
     box-shadow: 0 4px 24px rgba(0, 191, 255, 0.08);
     padding: 2rem 1.5rem;
     width: 270px;
-    transition: transform 0.2s, box-shadow 0.2s;
     border: 2px solid rgba(0, 191, 255, 0.15);
+    transition: transform 0.2s ease;
 }
 
 .education-card:hover {
-    transform: translateY(-8px) scale(1.03);
+    transform: scale(1.07);
     box-shadow: 0 8px 32px rgba(0, 191, 255, 0.18);
     border-color: #00bfff;
 }
@@ -94,4 +94,69 @@
     margin: 0;
     color: #bbb;
     font-size: 0.98rem;
+}
+
+/* Animation */
+.card1 {
+    animation: cardOne 0.9s ease;
+}
+
+.card2 {
+    animation: cardTwo 0.9s ease;
+}
+
+.card3 {
+    animation: cardThree 0.9s ease;
+}
+
+.card4 {
+    animation: cardFour 0.9s ease;
+}
+
+@keyframes cardOne {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardTwo {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardThree {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes cardFour {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
