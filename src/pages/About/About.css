@@ -19,6 +19,7 @@
 .about-container {
     margin-top: 19vh;
     padding: 2rem 0;
+    height: 65vh
 }
 
 .about-content {
@@ -36,7 +37,7 @@
 
 
 .main-text {
-    width: 30%;
+    width: 30rem;
     min-width: 250px;
 }
 
@@ -75,7 +76,7 @@ p {
 }
 
 .main-text {
-    animation: leftSlide 1.5s ease-out;
+    animation: leftSlide 1s ease-out;
 
 }
 
