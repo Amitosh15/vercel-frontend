@@ -20,26 +20,6 @@ const educationData = [
       "https://drive.google.com/file/d/1_7h6DBRt79pUGf1SwkbGycpbPsVvezVb/view?usp=drive_link",
     animation: "card2",
   },
-  {
-    title: "Website Design & Development",
-    subtitle: "Top Career Computers",
-    year: "2019",
-    description:
-      "Learned the fundamentals of web development including HTML, CSS, JavaScript, PHP, and Bootstrap.",
-    certificateUrl:
-      "https://drive.google.com/file/d/1FzTXfeXoK5JBD1N_MHmxcaXFcxPldo9u/view?usp=drive_link",
-    animation: "card3",
-  },
-  {
-    title: "Full-Stack Web Development Certification",
-    subtitle: "Udemy",
-    year: "2024",
-    description:
-      "Completed a certification in full-stack web development, covering modern technologies such as React, Node.js, Express, and MongoDB.",
-    certificateUrl:
-      "https://drive.google.com/file/d/13G1pzY5C3CPy5lT41CI5SrFeUhVRJfvT/view?usp=drive_link",
-    animation: "card4",
-  },
 ];
 
 const Education = () => {

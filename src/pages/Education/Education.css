@@ -99,24 +99,16 @@
 
 /* Animation */
 .card1 {
-    animation: cardOne 0.9s ease;
+    animation: cardOne 1s ease-out;
 }
 
 .card2 {
-    animation: cardTwo 0.9s ease;
-}
-
-.card3 {
-    animation: cardThree 0.9s ease;
-}
-
-.card4 {
-    animation: cardFour 0.9s ease;
+    animation: cardTwo 1s ease-out;
 }
 
 @keyframes cardOne {
     from {
-        transform: translateX(-200px);
+        transform: translateX(-300px);
         opacity: 0;
     }
 
@@ -128,7 +120,7 @@
 
 @keyframes cardTwo {
     from {
-        transform: translateY(200px);
+        transform: translateX(300px);
         opacity: 0;
     }
 
