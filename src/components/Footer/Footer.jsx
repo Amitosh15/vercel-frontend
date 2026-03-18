@@ -21,7 +21,6 @@ const Footer = () => {
           <FaLinkedin />
         </a>
       </div>
-      &copy; 2025 MyPortfolio. All rights reserved.
     </footer>
   );
 };
