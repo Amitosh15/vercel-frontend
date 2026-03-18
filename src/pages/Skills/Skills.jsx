@@ -9,7 +9,7 @@ import {
   FaBootstrap,
   FaFigma,
 } from "react-icons/fa";
-import { SiMongodb, SiRedux, SiExpress, SiPostman } from "react-icons/si";
+import { SiMongodb, SiRedux, SiExpress, SiTailwindcss } from "react-icons/si";
 import { motion } from "motion/react";
 
 const skillsList = [
@@ -22,7 +22,7 @@ const skillsList = [
   { icon: <SiMongodb color="#47a248" />, name: "MongoDB" },
   { icon: <SiRedux color="#764abc" />, name: "Redux" },
   { icon: <FaBootstrap color="#7952b3" />, name: "Bootstrap" },
-  { icon: <SiPostman color="#ff6c37" />, name: "Postman" },
+  { icon: <SiTailwindcss color="#06b6d4" />, name: "Tailwind CSS" },
   { icon: <FaFigma color="#a259ff" />, name: "Figma" },
   { icon: <FaGitAlt color="#f34f29" />, name: "Git" },
 ];
