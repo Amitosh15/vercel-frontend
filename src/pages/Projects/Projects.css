@@ -40,9 +40,6 @@
     width: 260px;
     transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
     border: 2px solid rgba(0, 191, 255, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .project-card:hover {
@@ -61,7 +58,6 @@
     margin: 0 0 1.2rem 0;
     color: #bbb;
     font-size: 0.98rem;
-    /* flex: 1; */
 }
 
 .project-img {
@@ -98,18 +94,6 @@
     filter: brightness(1.1);
 }
 
-/* .project-link {
-    margin-top: auto;
-    background: linear-gradient(90deg, #00bfff 0%, #ff00cc 100%);
-    color: #fff;
-    padding: 0.6rem 1.5rem;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: background 0.2s;
-    display: inline-block;
-} */
 
 .project-link:hover {
     background: linear-gradient(90deg, #ff00cc 0%, #00bfff 100%);
@@ -118,7 +102,6 @@
 .project-languages {
     margin-top: 0.7rem;
     display: flex;
-    /* flex-wrap: wrap; */
     gap: 0.5rem;
 }
 
