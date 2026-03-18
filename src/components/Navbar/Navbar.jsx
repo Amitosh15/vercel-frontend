@@ -31,6 +31,9 @@ const Navbar = () => {
         <Link to={"/education"} onClick={closeMenu}>
           <li>Education</li>
         </Link>
+        <Link to={"/certification"} onClick={closeMenu}>
+          <li>Certification</li>
+        </Link>
         <Link to={"/skills"} onClick={closeMenu}>
           <li>Skills</li>
         </Link>
