@@ -7,6 +7,7 @@ import Education from "./pages/Education/Education.jsx";
 import Skills from "./pages/Skills/Skills.jsx";
 import Projects from "./pages/Projects/Projects.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
+import Certificate from "./pages/Certification/Certification.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const appRouter = createBrowserRouter([
         element: <Education />,
       },
       {
+        path: "/certification",
+        element: <Certificate />,
+      },
+      {
         path: "/skills",
         element: <Skills />,
       },
@@ -42,5 +47,5 @@ const appRouter = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <RouterProvider router={appRouter} />
+  <RouterProvider router={appRouter} />,
 );
