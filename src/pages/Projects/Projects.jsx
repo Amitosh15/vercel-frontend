@@ -1,6 +1,7 @@
 import "./Projects.css";
 import site from "../../assets/site.jpg";
 import Ecommerce from "../../assets/Ecommerce.jpg";
+import Expense from "../../assets/Expense.png";
 
 const projectData = [
   {
@@ -27,13 +28,23 @@ const projectData = [
     link: "https://awaarafashion.com/",
     languages: ["Wordpress", "Elementor", "Plugins"],
   },
-  // {
-  //   title: "Portfolio Website",
-  //   description:
-  //     "A personal portfolio website built with React to showcase my projects and skills.",
-  //   link: "#",
-  //   languages: ["React", "Node", "Css"],
-  // },
+  {
+    image: Expense,
+    title: "Expense Tracker",
+    description:
+      "A full-stack application to help user take control of their financial health through real-time tracking.",
+    link: "https://frontend-expense-tracker-omega.vercel.app/",
+    languages: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "React",
+      "MongoDb",
+      "Node",
+      "Express",
+    ],
+  },
 ];
 
 const Projects = () => {
