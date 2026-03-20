@@ -16,8 +16,6 @@ const Home = () => {
                 1000,
                 "MERN Stack Developer",
                 1000,
-                "UI/UX Designer",
-                1000,
                 "Programmer",
                 1000,
               ]}
@@ -32,7 +30,7 @@ const Home = () => {
               development. I specialize in the MERN stack.
             </p>
             <div className="button" download>
-              <a href="/Amitosh-Resume.pdf">
+              <a href="/Resume.pdf">
                 <button type="button">DOWNLOAD CV</button>
               </a>
             </div>
